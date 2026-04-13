@@ -13,6 +13,11 @@ switch ($uri) {
         require __DIR__ . '/dashboard.php';
         break;
 
+    case '/clientes':
+        require __DIR__ . '/clientes.php';
+        break;
+
+
     case '/register':
         require __DIR__ . '/register.php';
         break;
