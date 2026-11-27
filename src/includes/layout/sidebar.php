@@ -14,11 +14,11 @@
         $menuItems = [
             ['id' => 'dashboard', 'label' => 'Dashboard', 'icon' => '🏠', 'link' => 'dashboard.php'],
             ['id' => 'clientes', 'label' => 'Clientes', 'icon' => '👥', 'link' => 'clientes.php'],
-            ['id' => 'servicos', 'label' => 'Serviços', 'icon' => '✂️', 'link' => '#'],
+            ['id' => 'servicos', 'label' => 'Serviços', 'icon' => '✂️', 'link' => 'servicos.php'],
             ['id' => 'agendamentos', 'label' => 'Agendamentos', 'icon' => '📅', 'link' => '#'],
         ];
 
-        foreach ($menuItems as $item): 
+        foreach ($menuItems as $item):
             $isActive = (isset($page) && $page == $item['id']);
         ?>
             <a href="<?= $item['link'] ?>" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-all <?= $isActive ? 'bg-blue-600 text-white shadow-lg' : 'text-gray-400 hover:bg-blue-900 hover:text-white' ?>">
